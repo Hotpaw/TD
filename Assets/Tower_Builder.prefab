@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2347799467232667924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2347799467232667915}
+  - component: {fileID: 2347799467232667914}
+  m_Layer: 0
+  m_Name: Tower_Builder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2347799467232667915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347799467232667924}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2347799467232667914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2347799467232667924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af8289584ff07e4cb20806d7f8ab4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildNumber: 0
+  towerList:
+  - {fileID: -7924924199738948109, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
+  - {fileID: 8664061483750353100, guid: 5d3d3c9cfcddc924fb5d859bfc360e9e, type: 3}
+  - {fileID: -6988585696947569369, guid: 0bb4094374b612b4c9393b824b25156b, type: 3}
+  - {fileID: 5546657607528244281, guid: 295b8ae1c82d7f1499a82ef34c0df282, type: 3}
+  - {fileID: -7924924199738948109, guid: df7024487bb113946a1deecadc12971c, type: 3}
+  - {fileID: -7924924199738948109, guid: 3c56eeb40937a604ca3ecb3e60d7f2f2, type: 3}
+  - {fileID: -7924924199738948109, guid: 2830adcdcb4dc2746afeed02cb06d30d, type: 3}
+  - {fileID: -7924924199738948109, guid: 1af93d34024d7384c8895cc69f2e1b2c, type: 3}
