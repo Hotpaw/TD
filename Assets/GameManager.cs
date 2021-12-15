@@ -18,15 +18,20 @@ public class GameManager : MonoBehaviour
     }
     public void SetTowers()
     {
+       
         LoadTowers();
         
     }
     public void Update()
     {
-       
 
-      
-        
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+
+            LootDrop();
+        }
+
+
     }
     public void AddTowersToTowerBar(string i) // Add all items in the Items list to ItemsInventory.
     {

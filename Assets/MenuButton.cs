@@ -14,7 +14,9 @@ public class MenuButton : MonoBehaviour
     InventoryBetweenScenes INVB;
 
 	public GameObject menuWindow;
+    public GameObject ControlWindow;
 	bool menuOpen = false;
+    bool controlMenuOpen = false;
 	void Start()
 	{
         INVB = FindObjectOfType<InventoryBetweenScenes>();
@@ -56,6 +58,12 @@ public class MenuButton : MonoBehaviour
 				break;
 			case 6: AddtoGameInventory(); Debug.Log(" TEST PRESSD ");
 				break;
+            case 7:
+                if (controlMenuOpen == false) ControlWindow.SetActive(true); Level = 8; controlMenuOpen = true;
+                break;
+            case 8:
+               if (controlMenuOpen == true) ControlWindow.SetActive(false); Level = 7; controlMenuOpen = false;
+                break;
 			default:
 				break;
         }
