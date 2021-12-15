@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-    LootDrop();
+        Debug.Log(" DEJA VU");
         SetTowers();
     }
     public void SetTowers()
