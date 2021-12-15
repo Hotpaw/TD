@@ -33,7 +33,9 @@ public class MenuButton : MonoBehaviour
 		a = Level;
         switch(a){
 			case 1:
+
 				SceneManager.LoadScene("Level1");
+                INVB.SaveAll();
 				break;
 			case 2: Application.Quit();
 				break;
@@ -43,7 +45,14 @@ public class MenuButton : MonoBehaviour
 			case 4:if(menuOpen == false) menuWindow.SetActive(true); Level = 5; menuOpen = true;
 				break;
 			case 5:
-				if (menuOpen == true) menuWindow.SetActive(false); Level = 4; menuOpen = false;
+                if (menuOpen == true)
+                {
+                    INVB.SaveAll();
+                    menuWindow.SetActive(false); 
+                    Level = 4; 
+                    menuOpen = false;
+
+                }
 				break;
 			case 6: AddtoGameInventory(); Debug.Log(" TEST PRESSD ");
 				break;

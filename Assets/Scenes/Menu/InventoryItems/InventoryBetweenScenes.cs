@@ -21,19 +21,6 @@ public class InventoryBetweenScenes : MonoBehaviour
     int a;
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-
-       InventoryItemFinder();
-        TowerChoiceFinder();
-        SaveItemInInventoryString();
-        SaveItemInTowerListString();
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-
-            LoadItemString();
-        }
         if (Input.GetKeyDown(KeyCode.E))
         {
 
@@ -46,10 +33,25 @@ public class InventoryBetweenScenes : MonoBehaviour
     private void Awake()
     {
         ITEMLIST = FindObjectOfType<InventoryItemList>();
+       
+    }
+    public void SaveAll()
+    {
+        InventoryItemFinder();
+        TowerChoiceFinder();
+        SaveItemInInventoryString();
+        SaveItemInTowerListString();
+    }
+    public void LoadAll()
+    {
+        InventorylistString();
+        TowerlistString();
     }
     public void ERASE()
     {
+
         Debug.Log("ERASED");
+        PlayerPrefs.DeleteKey("FirstTimePlaying");
         PlayerPrefs.DeleteKey("ItemList");
         PlayerPrefs.DeleteKey("TowerList");
     }

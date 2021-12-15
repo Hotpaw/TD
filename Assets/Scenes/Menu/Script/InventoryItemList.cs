@@ -10,6 +10,9 @@ public class InventoryItemList : MonoBehaviour
     public GameObject TowMenuPanel;
     public GameObject ModMenuPanel;
     public GameObject[] Items;
+
+    public int FirstTimePlaying = 1;
+    public int PlayBool;
  
     
 
@@ -20,10 +23,33 @@ public class InventoryItemList : MonoBehaviour
 
     private void Start()
     {
-
-
-      
        
+
+    }
+
+    public void PopulateFirstPlayer()
+    {
+        PlayBool = PlayerPrefs.GetInt("FirstTimePlaying");
+        if (PlayBool == 0)
+        {
+            PlayBool = 1;
+            PlayerPrefs.SetInt("FirstTimePlaying", PlayBool);
+        }
+        Debug.Log(" Play Bool: " + PlayBool);
+        FirstTimePlaying = PlayerPrefs.GetInt("FirstTimePlaying");
+        Debug.Log(" FirstTime: " + FirstTimePlaying); ;
+
+        if (FirstTimePlaying == 1)
+        {
+            AddItemsFromInvList("Ballista");
+            AddItemsFromInvList("Blocker");
+            AddItemsFromInvList("Goran");
+            PlayBool = 2;
+            FirstTimePlaying = PlayBool;
+            PlayerPrefs.SetInt("FirstTimePlaying", PlayBool);
+            Debug.Log(" CODE RUN");
+
+        }
     }
 
     public void AddItemsFromInvList(string i) // Add all items in the Items list to ItemsInventory.

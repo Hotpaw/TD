@@ -8,14 +8,24 @@ public class GameManager : MonoBehaviour
     public GameObject[] Towers;
     public List<GameObject> Tower = new List<GameObject>();
     public List<string> TowerString = new List<string>();
+    public List<string> InventoryString = new List<string>();
 
     void Start()
     {
+
+    LootDrop();
         SetTowers();
     }
     public void SetTowers()
     {
         LoadTowers();
+        
+    }
+    public void Update()
+    {
+       
+
+      
         
     }
     public void AddTowersToTowerBar(string i) // Add all items in the Items list to ItemsInventory.
@@ -63,5 +73,35 @@ public class GameManager : MonoBehaviour
             AddTowersToTowerBar(TowerString[i]);
         }
         TowerString.Clear();
+    }
+    public void AddLootToInventoryList(string i)
+    {
+        InventoryString = PlayerPrefsExtra.GetList("ItemList", new List<string>());
+        InventoryString.Add(i);
+        PlayerPrefsExtra.SetList("ItemList", InventoryString);
+
+    }
+    public void LootDrop()
+    {
+        string Loot = "";
+        int i = Random.Range(0, 2);
+       
+     Debug.Log("Loot Roll: " + i);
+      
+        switch (i)
+        {
+            case 0: Loot = "Ballista";
+                break;
+            case 1:
+                Loot = "Blocker";
+                break;
+            case 2: Debug.Log(" 2 was hit");
+                break;
+                default:
+                break;
+        }
+
+        Debug.Log(Loot);
+        AddLootToInventoryList(Loot);
     }
 }

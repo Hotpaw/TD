@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2834658846561728209, guid: a985bd003dfe06f42b786ecfaa615df8, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: e86e8faa1b5c20c468d06f7da129bfc3, type: 2}
     - target: {fileID: 4528164253653065209, guid: a985bd003dfe06f42b786ecfaa615df8, type: 3}
       propertyPath: m_Name
-      value: Tower_Bar_Icon
+      value: Goran
       objectReference: {fileID: 0}
     - target: {fileID: 4528164253653065214, guid: a985bd003dfe06f42b786ecfaa615df8, type: 3}
       propertyPath: m_Pivot.x
