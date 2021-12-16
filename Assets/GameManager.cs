@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject Tower_Bar;
+    public GameObject LootPoint;
     public GameObject[] Towers;
     public List<GameObject> Tower = new List<GameObject>();
     public List<string> TowerString = new List<string>();
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
 
 
     }
-    public void AddTowersToTowerBar(string i) // Add all items in the Items list to ItemsInventory.
+    public void AddTowersToTowerBar(string i) // Add all items in the Items list to towerbar.
     {
 
         switch (i)
@@ -70,7 +71,7 @@ public class GameManager : MonoBehaviour
         }
 
     }
-    public void LoadTowers()
+    public void LoadTowers() // Load each tower in the TowerChoice menu and instantiates them in thetowerbar for use.
     {
         TowerString = PlayerPrefsExtra.GetList("TowerList", new List<string>());
         for (int i = 0; i < TowerString.Count; i++)
@@ -79,34 +80,92 @@ public class GameManager : MonoBehaviour
         }
         TowerString.Clear();
     }
-    public void AddLootToInventoryList(string i)
+    public void AddLootToInventoryList(string i) // returns the saved inventory list then adds anyfound items to it and saves it again.
     {
         InventoryString = PlayerPrefsExtra.GetList("ItemList", new List<string>());
         InventoryString.Add(i);
         PlayerPrefsExtra.SetList("ItemList", InventoryString);
 
     }
-    public void LootDrop()
+    public void LootDrop() // rolls a random integer between 0 and X then sends a string to Addloottoinventory and adds to invent list
     {
         string Loot = "";
-        int i = Random.Range(0, 2);
+        int i = Random.Range(0, 10);
        
      Debug.Log("Loot Roll: " + i);
       
         switch (i)
         {
-            case 0: Loot = "Ballista";
+            case 0: 
+                Loot = "Ballista";
                 break;
             case 1:
                 Loot = "Blocker";
                 break;
-            case 2: Debug.Log(" 2 was hit");
+            case 2:
+                Loot = "Blocker";
                 break;
-                default:
+            case 3:
+                Loot = "DoubleDipper";
+                break;
+            case 4:
+                Loot = "Drako";
+                break;
+            case 5:
+                Loot = "FrostEye";
+                break;
+            case 6:
+                Loot = "Molotov";
+                break;
+            case 7:
+                Loot = "StingRay";
+                break;
+            case 8:
+                Loot = "TrippleMeat";
+                break;
+            case 9:
+                Loot = "Goran";
+                break;
+          
+
+            default:
                 break;
         }
 
-        Debug.Log(Loot);
+        switch (Loot) // Displays the loot found ingame.
+        {
+            case "Ballista":
+                Tower.Add(Instantiate(Towers[0], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "Blocker":
+                Tower.Add(Instantiate(Towers[1], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "DoubleDipper":
+                Tower.Add(Instantiate(Towers[2], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "Drako":
+                Tower.Add(Instantiate(Towers[3], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "FrostEye":
+                Tower.Add(Instantiate(Towers[4], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "Molotov":
+                Tower.Add(Instantiate(Towers[5], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "StingRay":
+                Tower.Add(Instantiate(Towers[6], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "TrippleMeat":
+                Tower.Add(Instantiate(Towers[7], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "Goran":
+                Tower.Add(Instantiate(Towers[8], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+
+
+        }
         AddLootToInventoryList(Loot);
+        LootDisperser LootDisplay = FindObjectOfType<LootDisperser>();
+        LootDisplay.StartLootDisperser();
     }
 }
