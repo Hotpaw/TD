@@ -10,6 +10,9 @@ public class CameraMovement : MonoBehaviour
     [SerializeField][Range(50, 100)] float minRange;
     [SerializeField][Range(80, 150)] float maxRange;
 
+    [SerializeField] public float maxdistanceX;
+    [SerializeField] public float maxdistanceZ;
+
     // Update is called once per frame
     void Update()
 
@@ -17,12 +20,32 @@ public class CameraMovement : MonoBehaviour
         CamMove();
         CamScroll();
 
+        CameraMove();
+    }
+
+    private void CameraMove() // Move the camera in X/Z positive and negative position and put a max value on how far it can travel.
+    {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
+        if (transform.position.x > 200)
+        {
+            transform.position = new Vector3(200f, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x < -200)
+        {
+            transform.position = new Vector3(-200f, transform.position.y, transform.position.z);
+        }
+        if (transform.position.z > 200)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, 200f);
+        }
+        if (transform.position.z < -200)
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, -200f);
+        }
     }
-
 
     void CamMove()
     {

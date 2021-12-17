@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.013
@@ -4380,10 +4380,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1579024628}
     m_Modifications:
-    - target: {fileID: 910362412925812829, guid: bd961d568c577f546997ceba3f948619, type: 3}
-      propertyPath: m_text
-      value: 1, 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5553315922540614900, guid: bd961d568c577f546997ceba3f948619, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -21175,6 +21171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5727915957621386617, guid: bd961d568c577f546997ceba3f948619, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9080919593816749510, guid: bd961d568c577f546997ceba3f948619, type: 3}
       propertyPath: m_Name
       value: (0, 0)
@@ -37688,6 +37688,18 @@ PrefabInstance:
     - target: {fileID: 5553315922540614900, guid: bd961d568c577f546997ceba3f948619, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727915957621386617, guid: bd961d568c577f546997ceba3f948619, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5727915957621386617, guid: bd961d568c577f546997ceba3f948619, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8055052828677396573, guid: bd961d568c577f546997ceba3f948619, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9080919593816749510, guid: bd961d568c577f546997ceba3f948619, type: 3}
       propertyPath: m_Name

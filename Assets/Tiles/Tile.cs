@@ -8,9 +8,12 @@ public class Tile : MonoBehaviour
     [SerializeField] Tower towerPrefab;
     [SerializeField] List<Tower> towerList = new List<Tower>();
     [SerializeField] bool isPlaceable;
+    public GameObject gridbox;
+    public Material boxColor;
     public int buildNumber = 0;
    
     public bool IsPlaceable { get { return isPlaceable; } }
+    public bool boxfalse;
 
     GridManager gridManager;
     Pathfinder pathfinder;
@@ -22,10 +25,11 @@ public class Tile : MonoBehaviour
 
     private void Awake()
     {
-
+        boxfalse = false;
         gridManager = FindObjectOfType<GridManager>();
         pathfinder = FindObjectOfType<Pathfinder>();
         towerPrefab = FindObjectOfType<Tower>();
+        gridbox.SetActive(false);
     }
     private void Start()
     {
@@ -40,7 +44,25 @@ public class Tile : MonoBehaviour
             }
         }
     }
+    public void Update()
+    {
+      
 
+    }
+    void OnMouseOver()
+    {
+        gridbox.SetActive(true);
+      
+      
+           
+
+       
+    }
+    void OnMouseExit()
+    {
+        gridbox.SetActive(false);
+       
+    }
 
     private void OnMouseDown()
     {
@@ -59,6 +81,7 @@ public class Tile : MonoBehaviour
 
                     gridManager.BlockNode(coordinates);
                     pathfinder.NotifyReceivers();
+                    gridbox.GetComponent<Renderer>().material.color = Color.red;
                 }
 
 
@@ -67,14 +90,7 @@ public class Tile : MonoBehaviour
 
         }
     }
-    private void OnMouseOver()
-    {
-     
-    }
-    private void OnMouseExit()
-    {
-       
-    }
+   
 }
 
    
