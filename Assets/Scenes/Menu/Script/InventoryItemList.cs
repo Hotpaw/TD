@@ -83,6 +83,9 @@ public class InventoryItemList : MonoBehaviour
             case "Goran":
                 ItemsInInventory.Add(Instantiate(Items[8], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
                 break;
+            case "Cryo-1":
+                ItemsInInventory.Add(Instantiate(Items[9], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                break;
 
 
         }
@@ -123,6 +126,9 @@ public class InventoryItemList : MonoBehaviour
                 ItemsInInventory.Add(Instantiate(Items[7], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
                 break;
             case "Goran":
+                ItemsInInventory.Add(Instantiate(Items[8], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                break;
+            case "Cryo-1":
                 ItemsInInventory.Add(Instantiate(Items[8], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
                 break;
 

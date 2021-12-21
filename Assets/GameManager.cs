@@ -66,6 +66,9 @@ public class GameManager : MonoBehaviour
             case "Goran":
                 Tower.Add(Instantiate(Towers[8], Tower_Bar.transform, Tower_Bar.transform.parent.parent));
                 break;
+            case "Cryo-1":
+                Tower.Add(Instantiate(Towers[9], Tower_Bar.transform, Tower_Bar.transform.parent.parent));
+                break;
 
 
         }
@@ -90,7 +93,7 @@ public class GameManager : MonoBehaviour
     public void LootDrop() // rolls a random integer between 0 and X then sends a string to Addloottoinventory and adds to invent list
     {
         string Loot = "";
-        int i = Random.Range(0, 10);
+        int i = Random.Range(0, 11);
        
      Debug.Log("Loot Roll: " + i);
       
@@ -126,7 +129,10 @@ public class GameManager : MonoBehaviour
             case 9:
                 Loot = "Goran";
                 break;
-          
+            case 10:
+                Loot = "Cryo-1";
+                break;
+
 
             default:
                 break;
@@ -160,6 +166,9 @@ public class GameManager : MonoBehaviour
                 break;
             case "Goran":
                 Tower.Add(Instantiate(Towers[8], LootPoint.transform, LootPoint.transform.parent.parent));
+                break;
+            case "Cryo-1":
+                Tower.Add(Instantiate(Towers[9], LootPoint.transform, LootPoint.transform.parent.parent));
                 break;
 
 

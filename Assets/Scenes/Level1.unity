@@ -20019,6 +20019,7 @@ MonoBehaviour:
   - {fileID: 9084850283380731968, guid: 53a9a6598b5dfd542b3a89b4170288a5, type: 3}
   - {fileID: 9199863240631308928, guid: f1a04dd2376e4464098185a1b5999148, type: 3}
   - {fileID: 8850304560093447151, guid: 8a75a42c4dd3d584c8c74f262bc552d4, type: 3}
+  - {fileID: 146283557687843649, guid: fe5d83848f8b6de4782f97bc6826b3fc, type: 3}
   Tower: []
   TowerString: []
   InventoryString: []
@@ -21190,12 +21191,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2347799467232667914, guid: 37cfcee9032bf3e4298a8eea9aa5cba7, type: 3}
       propertyPath: towerList.Array.size
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2347799467232667914, guid: 37cfcee9032bf3e4298a8eea9aa5cba7, type: 3}
       propertyPath: towerList.Array.data[8]
       value: 
       objectReference: {fileID: 6350783862202189967, guid: 9be6bb714210a9d49916f526840f7760, type: 3}
+    - target: {fileID: 2347799467232667914, guid: 37cfcee9032bf3e4298a8eea9aa5cba7, type: 3}
+      propertyPath: towerList.Array.data[9]
+      value: 
+      objectReference: {fileID: -7924924199738948109, guid: e5021b429e7794c419fdfa35ca48c9f1, type: 3}
     - target: {fileID: 2347799467232667915, guid: 37cfcee9032bf3e4298a8eea9aa5cba7, type: 3}
       propertyPath: m_RootOrder
       value: 7
