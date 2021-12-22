@@ -764,6 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5642dd115ab1e3d4cb96e9b8b8c77343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemytype: 0
   maxHitpoints: 20
   MaxArmor: 0
   hasResistance: 0
@@ -771,6 +772,7 @@ MonoBehaviour:
   energyRes: 0
   fireRess: 0
   burn_particle: {fileID: 0}
+  Blood: {fileID: 8500751124821044002, guid: 21d3dc4e35b3f0345ae1bbb4cb794849, type: 3}
   Resistances: {fileID: 0}
   resistancePos: {fileID: 0}
   CurrentHitpoints: 0

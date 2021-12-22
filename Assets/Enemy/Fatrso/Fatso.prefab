@@ -1136,7 +1136,8 @@ MonoBehaviour:
   physicalRes: 0
   energyRes: 0
   fireRess: 0
-  burn_particle: {fileID: 0}
+  burn_particle: {fileID: 8500751124821044002, guid: 21d3dc4e35b3f0345ae1bbb4cb794849, type: 3}
+  Blood: {fileID: 8500751124821044002, guid: 21d3dc4e35b3f0345ae1bbb4cb794849, type: 3}
   Resistances: {fileID: 0}
   resistancePos: {fileID: 0}
   CurrentHitpoints: 0

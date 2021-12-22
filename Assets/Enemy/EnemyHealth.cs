@@ -24,7 +24,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] bool energyRes = false;
     [SerializeField] bool fireRess = false;
     public ParticleSystem burn_particle;
-    
+    public ParticleSystem Blood;
+
     public GameObject Resistances;
     public GameObject resistancePos;
     int typeSize;
@@ -83,10 +84,12 @@ public class EnemyHealth : MonoBehaviour
         armorPiercing = other.GetComponent<ParticleScript>().GetarmorPiercing();
         ProcessHit(damage);
         Debug.Log("I was Activated");
+        Instantiate(Blood,transform.position,transform.rotation);
 
     }
     void ProcessHit(int damage)
     {
+        
         Armor -= armorPiercing;
         if(Armor <= 0)
         {
@@ -164,7 +167,7 @@ public class EnemyHealth : MonoBehaviour
         }
         if (enemytype == EnemyType.Boss)
         {
-            gamemanager.();
+            gamemanager.BossLootTable();
             Debug.Log("i am miniboss");
         }
 

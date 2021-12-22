@@ -5045,6 +5045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c113ebb91610d4598ee171ad0aa956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AlienBlood: {fileID: 8500751124821044002, guid: 21d3dc4e35b3f0345ae1bbb4cb794849, type: 3}
   particleDamage: 10
   multiplier: 0
   armorPiercePerHit: 0

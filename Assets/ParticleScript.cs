@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ParticleScript : MonoBehaviour
 {
+
     [SerializeField] int particleDamage = 1;
     [SerializeField] float multiplier;
     [SerializeField] int armorPiercePerHit;
@@ -13,7 +14,7 @@ public class ParticleScript : MonoBehaviour
     [Tooltip(" Physical, Energy or Fire ")]
     [SerializeField] string damageType;
     // Start is called before the first frame update
-
+   
     public int GetDamage()
     {
         return particleDamage;
