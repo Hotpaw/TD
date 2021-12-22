@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 8165607050980826485}
   - component: {fileID: 1815815191310278517}
   m_Layer: 5
-  m_Name: TrippleMeat 1
+  m_Name: TrippleMeat
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
