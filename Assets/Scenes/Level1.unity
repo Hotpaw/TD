@@ -45505,13 +45505,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectPool
       objectReference: {fileID: 0}
-    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
-      propertyPath: starttime
-      value: 10
+    - target: {fileID: 5465634960697995642, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: Enemy1
+      value: 
+      objectReference: {fileID: 4060024852799666313, guid: cbcb3c0422ccae7458e2964155c00808, type: 3}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: Enemy2
+      value: 
+      objectReference: {fileID: 8455495355349356893, guid: 2757ecca8df39864ba15bb97ced5322f, type: 3}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: Enemy3
+      value: 
+      objectReference: {fileID: 4060024852799666313, guid: cbcb3c0422ccae7458e2964155c00808, type: 3}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: Enemy4
+      value: 
+      objectReference: {fileID: 4060024852799666313, guid: cbcb3c0422ccae7458e2964155c00808, type: 3}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: starttime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: spawnTimer
+      value: 3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
+      propertyPath: EnemyPrefab
+      value: 
+      objectReference: {fileID: 4028974680155709887, guid: 742e0896c093bfe4a82c35a6f06902a2, type: 3}
+    - target: {fileID: 5465634960697995643, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}
       propertyPath: SpawnBoostTime
-      value: 31.7
+      value: 3.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cad0167efa0a6947b124ab136e7aa74, type: 3}

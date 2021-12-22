@@ -6,6 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(Enemy))]
 public class EnemyHealth : MonoBehaviour
 {
+
+    public enum EnemyType { Trash, MiniBoss, Boss };
+    public EnemyType enemytype = EnemyType.Trash;
     [SerializeField] int maxHitpoints = 5;
     [Tooltip("Adds amount to maxHitPoints when enemy dies. ")]
     public int MaxArmor;
@@ -31,6 +34,7 @@ public class EnemyHealth : MonoBehaviour
 
     Enemy enemy;
     EnemyMover e_Mover;
+    GameManager gamemanager;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -40,6 +44,7 @@ public class EnemyHealth : MonoBehaviour
         burn_particle.Stop();// make into own function for all these types
         CurrentHitpoints = maxHitpoints + bank.difficultyRamp ;// + bank.difficultyRamp;
         burn_Active = false;
+        gamemanager = FindObjectOfType<GameManager>();
         Debug.Log(" burnA: " + burn_Active);
         
 
@@ -125,7 +130,7 @@ public class EnemyHealth : MonoBehaviour
             damage = damage - Armor;
             if (damage <= 0) { damage = 0; };
             CurrentHitpoints -= damage;
-            Debug.Log(CurrentHitpoints);
+           
         };
         // Effects made by particles call for functions in either movement or Enemy.
       if(effect == "Slow")
@@ -133,19 +138,40 @@ public class EnemyHealth : MonoBehaviour
             e_Mover.Slow_hit(multiplier);
         };
                 if (CurrentHitpoints <= 0)
-                {
-            stopped = true;
-            enemy.RewardGold();
-            burn_Active = false;
-     
-            gameObject.SetActive(false);
-                   
-                    
-           
-                };
+        {
+            EnemyDeath();
+        };
      
 
     }
+
+    private void EnemyDeath()
+    {
+        stopped = true;
+        enemy.RewardGold();
+        burn_Active = false;
+
+        int i = Random.Range(0, 100);
+        if(i > 99 && enemytype == EnemyType.Trash)
+        {
+            gamemanager.LootDrop();
+            Debug.Log("i am trash");
+        }
+        if (i > 80 && enemytype == EnemyType.MiniBoss)
+        {
+            gamemanager.minibossLoottable();
+            Debug.Log("i am miniboss");
+        }
+        if (enemytype == EnemyType.Boss)
+        {
+            gamemanager.();
+            Debug.Log("i am miniboss");
+        }
+
+        gameObject.SetActive(false);
+
+    }
+
     // Update is called once per frame
 
     public void Burn() // If target is not burning, take the damage from projectile and start couroutine.

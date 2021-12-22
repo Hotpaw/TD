@@ -96,10 +96,10 @@ public class ObjectPool : MonoBehaviour
                 pool.Add(Instantiate(Enemy1, transform));
                 break;
             case 2: // Creates a Ram with Energy resistance
-                pool.Add(Instantiate(Enemy1, transform));
+                pool.Add(Instantiate(Enemy2, transform));
                 break;
             case 3: // Creates a normal ram
-                pool.Add(Instantiate(Enemy1, transform));
+                pool.Add(Instantiate(Enemy3, transform));
                 break;
             case 4: // Creates a Rockman with phyiscal resistance
                 pool.Add(Instantiate(Enemy1, transform));
