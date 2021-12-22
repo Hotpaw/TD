@@ -36,7 +36,7 @@ public class MenuButton : MonoBehaviour
         switch(a){
 			case 1:
 
-				SceneManager.LoadScene("Level1");
+				SceneManager.LoadScene("Level_Select");
                 INVB.SaveAll();
 				break;
 			case 2: Application.Quit();
