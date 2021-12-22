@@ -15,16 +15,24 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     GameObject placeHolder = null;
     int number;
 
+
     Camera m_cam;
+    void Awake()
+    {
+        
+    }
+
     void Start()
     {
+        
         if (Camera.main.GetComponent<PhysicsRaycaster>() == null)
-            Debug.Log("Camera doesn't ahve a physics raycaster.");
+          
 
         m_cam = Camera.main;
     }
   public void OnBeginDrag(PointerEventData eventData)
     {
+       
         placeHolder = new GameObject();
         placeHolder.transform.SetParent(this.transform.parent);
 
@@ -39,6 +47,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnDrag(PointerEventData eventData)
     {
+       
         Ray R = m_cam.ScreenPointToRay(Input.mousePosition); // Get the ray from mouse position
         Vector3 PO = transform.position; // Take current position of this draggable object as Plane's Origin
         Vector3 PN = -m_cam.transform.forward; // Take current negative camera's forward as Plane's Normal
@@ -52,7 +61,7 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        
+       
 
         GameObject TowerPanel;
         GameObject InventoryPanel;
@@ -97,4 +106,6 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         
         Destroy(placeHolder);
     }
+
+   
 }

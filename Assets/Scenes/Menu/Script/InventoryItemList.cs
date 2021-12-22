@@ -57,31 +57,31 @@ public class InventoryItemList : MonoBehaviour
       
         switch (i)
         {
-            case "Ballista": ItemsInInventory.Add(Instantiate(Items[0], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+            case "Ballista": ItemsInInventory.Add(Instantiate(Items[0], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Blocker":
-                ItemsInInventory.Add(Instantiate(Items[1], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[1], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "DoubleDipper":
-                ItemsInInventory.Add(Instantiate(Items[2], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[2], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Drako":
-                ItemsInInventory.Add(Instantiate(Items[3], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[3], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "FrostEye":
-                ItemsInInventory.Add(Instantiate(Items[4], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[4], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Molotov":
-                ItemsInInventory.Add(Instantiate(Items[5], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[5], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "StingRay":
-                ItemsInInventory.Add(Instantiate(Items[6], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[6], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "TrippleMeat":
-                ItemsInInventory.Add(Instantiate(Items[7], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[7], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Goran":
-                ItemsInInventory.Add(Instantiate(Items[8], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[8], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
 
 
@@ -99,31 +99,31 @@ public class InventoryItemList : MonoBehaviour
         switch (i)
         {
             case "Ballista":
-                ItemsInInventory.Add(Instantiate(Items[0], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[0], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Blocker":
-                ItemsInInventory.Add(Instantiate(Items[1], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[1], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "DoubleDipper":
-                ItemsInInventory.Add(Instantiate(Items[2], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[2], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Drako":
-                ItemsInInventory.Add(Instantiate(Items[3], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[3], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "FrostEye":
-                ItemsInInventory.Add(Instantiate(Items[4], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[4], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Molotov":
-                ItemsInInventory.Add(Instantiate(Items[5], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[5], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "StingRay":
-                ItemsInInventory.Add(Instantiate(Items[6], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[6], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "TrippleMeat":
-                ItemsInInventory.Add(Instantiate(Items[7], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[7], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
             case "Goran":
-                ItemsInInventory.Add(Instantiate(Items[8], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent));
+                ItemsInInventory.Add(Instantiate(Items[8], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
 
 

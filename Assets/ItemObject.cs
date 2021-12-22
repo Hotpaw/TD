@@ -24,6 +24,7 @@ public class ItemObject : MonoBehaviour
    
 
     public GameObject DescriptionWindow;
+    public Image descriptionImage;
 
     private void Awake()
     {
@@ -45,11 +46,31 @@ public class ItemObject : MonoBehaviour
     }
     private void OnMouseOver()
     {
+
         DescriptionWindow.SetActive(true);
-      
+        MainItemIcon.maskable = false;
+        itemIcon.maskable = false;
+        ObjectTypeIcon.maskable=false;
+        itemName.maskable = false;  
+        itemCost.maskable = false;
+        ObjectType.maskable=false;
+        itemDescription.maskable = false;
+        rarity.maskable = false;    
+        descriptionImage.maskable = false;
+
+
     }
     private void OnMouseExit()
     {
+        MainItemIcon.maskable = true;
+        itemIcon.maskable = true;
+        ObjectTypeIcon.maskable = true;
+        itemName.maskable = true;
+        itemCost.maskable = true;
+        ObjectType.maskable = true;
+        itemDescription.maskable = true;
+        rarity.maskable = true;
+        descriptionImage.maskable = true;
         DescriptionWindow.SetActive(false);
     }
     public string Save()
@@ -81,4 +102,6 @@ public class ItemObject : MonoBehaviour
                 break;
         }
     }
+
+  
 }
