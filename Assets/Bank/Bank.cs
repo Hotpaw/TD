@@ -50,7 +50,7 @@ public class Bank : MonoBehaviour
         {
          
         }
-        difficultyRamp = playerWealth / 20;
+        difficultyRamp = playerWealth / 5;
 
         if (Input.GetKeyDown(KeyCode.M))
         {

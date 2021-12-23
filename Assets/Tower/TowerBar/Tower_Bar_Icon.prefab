@@ -118,8 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 5c69b08129c8cbf469c58d16ba5d66f9, type: 2}
   MainItemIcon: {fileID: 4528164253653065212}
-  itemIcon: {fileID: 4528164253653065212}
-  ObjectTypeIcon: {fileID: 6266943915398873515}
+  itemIcon: {fileID: 6266943915398873515}
+  ObjectTypeIcon: {fileID: 6266943916940796965}
   itemName: {fileID: 6266943916469131374}
   itemCost: {fileID: 6266943917004292228}
   ObjectType: {fileID: 6266943915444833103}

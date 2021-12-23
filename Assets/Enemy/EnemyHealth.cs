@@ -53,14 +53,15 @@ public class EnemyHealth : MonoBehaviour
     private void OnDisable()
     {
         stopped = true;
-        burn_particle.Stop();
+      //  burn_particle.Stop();
         burn_Active = false;
         StopAllCoroutines();
       
     }
     public void Awake()
     {
-        burn_particle = FindObjectOfType<ParticleSystem>();
+     
+        
         bank = FindObjectOfType<Bank>();
     }
     private void Start()
@@ -84,7 +85,7 @@ public class EnemyHealth : MonoBehaviour
         armorPiercing = other.GetComponent<ParticleScript>().GetarmorPiercing();
         ProcessHit(damage);
         Debug.Log("I was Activated");
-        Instantiate(Blood,transform.position,transform.rotation);
+        Blood.Play();
 
     }
     void ProcessHit(int damage)

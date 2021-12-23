@@ -19,6 +19,6 @@ public class particlekill : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log(time);
+      
     }
 }
