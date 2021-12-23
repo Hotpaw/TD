@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
       
         switch (i)
         {
-            case 0: 
+            case 0:
                 Loot = "Ballista";
                 break;
             case 1:
@@ -111,6 +111,16 @@ public class GameManager : MonoBehaviour
             case 3:
                 Loot = "DoubleDipper";
                 break;
+            case 4:
+                Loot = "Drako";
+                break;
+            case 5:
+                Loot = "FrostEye";
+                break;
+            case 6:
+                Loot = "Molotov";
+                break;
+            case 7:
                 Loot = "StingRay";
                 break;
             case 8:
