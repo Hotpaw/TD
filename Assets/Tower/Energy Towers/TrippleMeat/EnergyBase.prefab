@@ -9776,7 +9776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61f58666889f79489a91f017b133a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 50
+  cost: 60
   buildDelay: 0.5
   name: 
 --- !u!1 &9221325113956451384

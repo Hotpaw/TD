@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   rarity: 3
-  itemIcon: {fileID: 21300000, guid: f78d6cd588baffe4cb59d707317ed6cb, type: 3}
+  itemIcon: {fileID: 21300000, guid: bbad3dd1b9d51924c8b4b938fb37aa97, type: 3}
   ObjectypeIcon: {fileID: 21300000, guid: 65639d243a032b8449cc0337bae01989, type: 3}
   itemName: Drako
   itemCost: 'Cost: 30'
   ObjectType: Fire
-  itemDescription: 'Description: Viking burn'
+  itemDescription: Metalic Scraps turned into a dragonlike tower that spews fireballs!

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: FrostEye
   m_EditorClassIdentifier: 
   Type: 0
-  rarity: 0
+  rarity: 2
   itemIcon: {fileID: 21300000, guid: b7364e054f55eda4685e3dd5b9a9a6f0, type: 3}
-  ObjectypeIcon: {fileID: 21300000, guid: 366aa2aac65cef349a45230ead6a0daf, type: 3}
-  itemName: Ballista
-  itemCost: 50
+  ObjectypeIcon: {fileID: 21300000, guid: 65639d243a032b8449cc0337bae01989, type: 3}
+  itemName: FrostEye
+  itemCost: 'Cost: 50'
   ObjectType: Energy
   itemDescription: High Tech science tower that slows down cell movement on hit.
     Slows!

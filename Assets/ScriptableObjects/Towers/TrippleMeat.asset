@@ -17,6 +17,6 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 93e9e295d3c81f447bfc7fd316babeca, type: 3}
   ObjectypeIcon: {fileID: 21300000, guid: 65639d243a032b8449cc0337bae01989, type: 3}
   itemName: TrippleMeat
-  itemCost: 'Cost: 50'
+  itemCost: 'Cost: 60'
   ObjectType: Energy
-  itemDescription: 'Description: LAZERS.'
+  itemDescription: A high powered laser turret.

@@ -1183,7 +1183,7 @@ MonoBehaviour:
   ObjectType: {fileID: 4311848960024561114}
   itemDescription: {fileID: 6207133918756197210}
   rarity: {fileID: 4244978314250748692}
-  DescriptionWindow: {fileID: 0}
+  DescriptionWindow: {fileID: 5747950436766556725}
   descriptionImage: {fileID: 5518546612910274216}
 --- !u!65 &1815815191310278517
 BoxCollider:

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TrippleMeat
   m_EditorClassIdentifier: 
   Type: 0
-  rarity: 0
+  rarity: 1
   itemIcon: {fileID: 21300000, guid: 93e9e295d3c81f447bfc7fd316babeca, type: 3}
-  ObjectypeIcon: {fileID: 21300000, guid: 366aa2aac65cef349a45230ead6a0daf, type: 3}
+  ObjectypeIcon: {fileID: 21300000, guid: 65639d243a032b8449cc0337bae01989, type: 3}
   itemName: TrippleMeat
-  itemCost: 50
+  itemCost: 'Cost: 60'
   ObjectType: Energy
-  itemDescription: High Powered enery weapon.
+  itemDescription: A high powered laser turret.

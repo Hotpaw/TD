@@ -972,9 +972,9 @@ MonoBehaviour:
   itemName: {fileID: 429327760385029732}
   itemCost: {fileID: 2361126649327943030}
   ObjectType: {fileID: 7638442791327482812}
-  itemDescription: {fileID: 0}
+  itemDescription: {fileID: 7194682591118023093}
   rarity: {fileID: 1434987780540162086}
-  DescriptionWindow: {fileID: 1459984804279428601}
+  DescriptionWindow: {fileID: 4335160878798258930}
   descriptionImage: {fileID: 1544372774880900778}
 --- !u!65 &1815815191310278517
 BoxCollider:

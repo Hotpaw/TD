@@ -50,7 +50,7 @@ MonoBehaviour:
   weapon: {fileID: 3144582324300694500}
   projectileParticles: {fileID: 5933833514587433413}
   range: 30
-  attackSpeed: 20
+  attackSpeed: 5
 --- !u!114 &-7924924199738948109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,8 +63,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61f58666889f79489a91f017b133a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 50
-  buildDelay: 3
+  cost: 10
+  buildDelay: 0
   name: TORN
 --- !u!114 &609410136878722576
 MonoBehaviour:
@@ -81,7 +81,7 @@ MonoBehaviour:
   weapon: {fileID: 3144582324300694500}
   projectileParticles: {fileID: 5933833514587433413}
   range: 18
-  attackSpeed: 200
+  attackSpeed: 50
   attackTimer: 3
 --- !u!1 &5182938773836610614
 GameObject:
@@ -5158,10 +5158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c113ebb91610d4598ee171ad0aa956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleDamage: 10
+  particleDamage: 2
   multiplier: 0.5
+  armorPiercePerHit: 0
   Slow: 0
-  Burn: 1
+  Burn: 0
   damageType: Fire
 --- !u!114 &4680394747732911248
 MonoBehaviour:

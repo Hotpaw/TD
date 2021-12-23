@@ -19,4 +19,4 @@ MonoBehaviour:
   itemName: Blocker
   itemCost: 'Cost: 2'
   ObjectType: Wall
-  itemDescription: Blocking.
+  itemDescription: Titanium Box that hinders any aliens from passing through it.

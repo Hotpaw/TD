@@ -82,7 +82,7 @@ public class Bank : MonoBehaviour
 
         if (colonyStructure < 0)
         {
-            ReloadScene();
+            SceneManager.LoadScene("menu");
         }
     }
     void UpdateDisplay()

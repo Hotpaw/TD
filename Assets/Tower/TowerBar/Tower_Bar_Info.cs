@@ -24,7 +24,7 @@ public class Tower_Bar_Info : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public TextMeshProUGUI rarity;
 
-
+    string rarityColor;
 
     public GameObject DescriptionWindow;
 
@@ -41,6 +41,8 @@ public class Tower_Bar_Info : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         ObjectType.text = item.ObjectType;
         itemDescription.text = item.itemDescription;
         rarity.text = item.rarity.ToString();
+        rarityColor = item.rarity.ToString();
+        Rarity();
 
 
     }
@@ -72,5 +74,30 @@ public class Tower_Bar_Info : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         TB.Build(item.name);
     }
+    public void Rarity()
+    {
+        switch (rarityColor)
+        {
+            case "common":
+                ObjectTypeIcon.color = Color.grey;
+                itemName.color = Color.grey;
+                break;
+            case "Uncommon":
+                ObjectTypeIcon.color = Color.green;
+                itemName.color = Color.green;
+                break;
+            case "Rare":
+                ObjectTypeIcon.color = Color.blue;
+                itemName.color = Color.blue;
+                break;
+            case "Epic":
+                ObjectTypeIcon.color = Color.red;
+                itemName.color = Color.red;
+                break;
+            default:
+                break;
+        }
+    }
+
 }
 

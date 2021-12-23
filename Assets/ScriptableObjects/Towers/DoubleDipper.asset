@@ -19,4 +19,5 @@ MonoBehaviour:
   itemName: DoubleDipper
   itemCost: 'Cost: 50'
   ObjectType: Phyiscal
-  itemDescription: 'Description: Dual Tower.'
+  itemDescription: Dual headed tower that shots in close and medium range, perfect
+    lane breaker.

@@ -23,6 +23,7 @@ public class BossScript : MonoBehaviour
     [SerializeField] bool energyRes = false;
     [SerializeField] bool fireRess = false;
     public ParticleSystem burn_particle;
+    public ParticleSystem blood;
 
     public GameObject Resistances;
     public GameObject resistancePos;
@@ -37,6 +38,7 @@ public class BossScript : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
+        blood.Play();
         Armor = MaxArmor;
         StopCoroutine("Burn_Effect");
         stopped = false;
@@ -56,7 +58,7 @@ public class BossScript : MonoBehaviour
     }
     public void Awake()
     {
-        burn_particle = FindObjectOfType<ParticleSystem>();
+       
         bank = FindObjectOfType<Bank>();
     }
     private void Start()

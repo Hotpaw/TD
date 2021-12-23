@@ -19,4 +19,4 @@ MonoBehaviour:
   itemName: Stingray
   itemCost: 'Cost: 30'
   ObjectType: Phyiscal
-  itemDescription: 'Description: Armor Piercing'
+  itemDescription: Sharpshooting Armor Piercing turret.

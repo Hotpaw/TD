@@ -17,6 +17,7 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 11cea0903302d0a4a911c05ea4bee908, type: 3}
   ObjectypeIcon: {fileID: 21300000, guid: 65639d243a032b8449cc0337bae01989, type: 3}
   itemName: Molotov
-  itemCost: 'Cost: 100'
+  itemCost: 'Cost: 70'
   ObjectType: Fire
-  itemDescription: 'Description: Totally Imba'
+  itemDescription: 'Description: Flamethrower Tower that does low damage but at high
+    speed, weak vs armor.'

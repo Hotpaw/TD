@@ -15,8 +15,8 @@ MonoBehaviour:
   Type: 0
   rarity: 0
   itemIcon: {fileID: 21300000, guid: 07ab3bb94f4a2564290300ec842e0a7b, type: 3}
-  ObjectypeIcon: {fileID: 21300000, guid: 366aa2aac65cef349a45230ead6a0daf, type: 3}
+  ObjectypeIcon: {fileID: 21300000, guid: 65639d243a032b8449cc0337bae01989, type: 3}
   itemName: Blocker
-  itemCost: 2
+  itemCost: 'Cost: 2'
   ObjectType: Wall
   itemDescription: Titanium Box that hinders any aliens from passing through it.

@@ -19,4 +19,5 @@ MonoBehaviour:
   itemName: FrostEye
   itemCost: 'Cost: 50'
   ObjectType: Energy
-  itemDescription: 'Description: Slow'
+  itemDescription: High Tech science tower that slows down cell movement on hit.
+    Slows!
