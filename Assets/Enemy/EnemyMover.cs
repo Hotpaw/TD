@@ -40,7 +40,7 @@ public class EnemyMover : MonoBehaviour
         enemy = GetComponent<Enemy>();
         gridManager = FindObjectOfType<GridManager>();
         pathFinder = FindObjectOfType<Pathfinder>();
-        slow_Effect = FindObjectOfType<ParticleSystem>();
+      
      
     }
 

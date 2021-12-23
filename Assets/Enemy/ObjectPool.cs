@@ -12,6 +12,9 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] [Range(0, 50)] int poolSize = 5;
     [SerializeField] [Range(0.1f, 30f)] float spawnTimer = 1f;
 
+    [SerializeField] List<GameObject> M_Boss;
+    [SerializeField] List<GameObject> Boss;
+
     int poolinc;
     List<GameObject>pool = new List<GameObject>(5);
     [SerializeField] float starttime;
@@ -111,29 +114,38 @@ public class ObjectPool : MonoBehaviour
             
       
     }
-    public void SpawnRandomEnemy(int a)
+    public void SpawnMiniboss(int a)
     {
-    
-       
+
+        Debug.Log(" BOS APWN");
         switch (a)
         {
            
             case 1:
-                pool.Add(Instantiate(Enemy1, transform));
-                break;
-            case 2:
-                pool.Add(Instantiate(Enemy2, transform));
-                break;
-            case 3:
-                pool.Add(Instantiate(Enemy3, transform));
-                break;
-            case 4:
-                pool.Add(Instantiate(Enemy4, transform));
+                pool.Add(Instantiate(M_Boss[0], transform));
                 break;
             default:
                 break;
         }
        
+
+    }
+    public void SpawnBoss(int a)
+    {
+        Debug.Log(" BOS APWN");
+
+        switch (a)
+        {
+           
+                
+            case 1:
+                pool.Add(Instantiate(Boss[0], transform));
+                break;
+          
+            default:
+                break;
+        }
+
 
     }
     public void Rand()

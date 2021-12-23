@@ -20,8 +20,8 @@ public class Bank : MonoBehaviour
 
     public GameObject ObjectPool;
     public ObjectPool objectpool;
-    bool boss = false;
-    bool miniBoss = false;
+    bool boss;
+    bool miniBoss;
     float ObjectPoolActivation;
  
    public int playerWealth = 0;
@@ -32,7 +32,9 @@ public class Bank : MonoBehaviour
     public GameObject Winscreen;
     private void Awake()
     {
-     
+        miniBoss = false;
+        boss = false;
+
         currentBalance = startingBalance;
        
         UpdateDisplay();
@@ -89,26 +91,34 @@ public class Bank : MonoBehaviour
         ColonyStructure.text = colonyStructure + " %";
         slider.value = colonyStructure;
         Fill.color = Color.Lerp(Color.red, Color.green, slider.value / 100);
-        if(playerWealth >= 500 && playerWealth <= 1000)
+        if(playerWealth >= 500 && playerWealth <= 2000)
         {
            
             ThreatLevel.SetText("Medium");
             ThreatLevel.color = Color.yellow;
 
         }
-        if (playerWealth >= 1001 && playerWealth <= 3000 && miniBoss == false)
+        if (playerWealth >= 2001 && playerWealth <= 5000)
         {
             ThreatLevel.SetText("Hard");
-            objectpool.SpawnRandomEnemy(3);
+            if(miniBoss == false)
+            {
+                miniBoss = true;
+                objectpool.SpawnMiniboss(1);
+            }
+            
             ThreatLevel.color = Color.red;
-            miniBoss = true;
+           
         }
-        if (playerWealth >= 3001 && boss == false)
+        if (playerWealth >= 5001)
         {
             ThreatLevel.SetText("Extermination");
             ThreatLevel.color = Color.black;
-            objectpool.SpawnRandomEnemy(4);
-            boss = true;
+            if (boss == false)
+            {
+                boss = true;
+                objectpool.SpawnBoss(1);
+            }
         }
 
     }

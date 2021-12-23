@@ -54,7 +54,7 @@ public class TowerBuilder : MonoBehaviour
             case "Molotov":
                 towerPrefab = towerList[6];
                 break;
-            case "StingRay":
+            case "Stingray":
                 towerPrefab = towerList[7];
                 break;
             case "Drako":

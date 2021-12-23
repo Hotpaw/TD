@@ -41,10 +41,10 @@ public class EnemyHealth : MonoBehaviour
     {
         Armor = MaxArmor;
         StopCoroutine("Burn_Effect");
-        stopped = false;
-        burn_particle.Stop();// make into own function for all these types
+       
+       
         CurrentHitpoints = maxHitpoints + bank.difficultyRamp ;// + bank.difficultyRamp;
-        burn_Active = false;
+      
         gamemanager = FindObjectOfType<GameManager>();
         Debug.Log(" burnA: " + burn_Active);
         
@@ -121,7 +121,7 @@ public class EnemyHealth : MonoBehaviour
 
             if (effect == "Burn")
             {
-                Burn();
+                
                 Debug.Log(" BURN PROCESS HIT");
             }
            
