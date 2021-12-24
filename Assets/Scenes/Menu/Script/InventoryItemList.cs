@@ -86,6 +86,9 @@ public class InventoryItemList : MonoBehaviour
             case "Cryo-1":
                 ItemsInInventory.Add(Instantiate(Items[9], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
+            case "Wasp":
+                ItemsInInventory.Add(Instantiate(Items[10], InvMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
+                break;
 
 
         }
@@ -130,6 +133,9 @@ public class InventoryItemList : MonoBehaviour
                 break;
             case "Cryo-1":
                 ItemsInInventory.Add(Instantiate(Items[9], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
+                break;
+            case "Wasp":
+                ItemsInInventory.Add(Instantiate(Items[10], TowMenuPanel.transform, InvMenuPanel.transform.parent.parent.parent));
                 break;
 
 

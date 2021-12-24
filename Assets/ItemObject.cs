@@ -57,7 +57,10 @@ public class ItemObject : MonoBehaviour
         itemDescription.maskable = false;
         rarity.maskable = false;    
         descriptionImage.maskable = false;
-
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetMouseButtonDown(0))
+        {
+            Destroy(gameObject);
+        }
 
     }
     private void OnMouseExit()
