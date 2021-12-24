@@ -63,6 +63,10 @@ public class TowerBuilder : MonoBehaviour
             case "Cryo-1":
                 towerPrefab = towerList[9];
                 break;
+            case "Wasp":
+                towerPrefab = towerList[10];
+                
+                break;
             default:
                 break;
         }

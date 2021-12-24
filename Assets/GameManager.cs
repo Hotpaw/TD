@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
             case "Molotov":
                 Tower.Add(Instantiate(Towers[5], Tower_Bar.transform, Tower_Bar.transform.parent.parent));
                 break;
-            case "Stingray":
+            case "StingRay":
                 Tower.Add(Instantiate(Towers[6], Tower_Bar.transform, Tower_Bar.transform.parent.parent));
                 break;
             case "TrippleMeat":

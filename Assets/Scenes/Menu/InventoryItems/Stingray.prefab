@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 1815815191310278517}
   - component: {fileID: 1758455261401449376}
   m_Layer: 5
-  m_Name: Stingray
+  m_Name: StingRay
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
